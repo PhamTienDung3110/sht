@@ -61,7 +61,7 @@ export default function CoursesPage() {
       price: 3900000,
       originalPrice: 7800000,
       discount: "-50%",
-      category: "Khóa ôn đánh giá tư duy TSA Bách Khoa Hà Nội"
+      category: "Khóa ôn đánh giá TSA Bách Khoa Hà Nội"
     },
     {
       id: 8,
@@ -149,7 +149,7 @@ export default function CoursesPage() {
           <div className="hidden md:block relative">
             <div className="sticky top-[75px] h-[calc(100vh-75px)]">
               <div className="h-full pr-2">
-                <div className="h-full overflow-y-auto custom-scrollbar">
+                <div className="h-full">
                   <div className="bg-white rounded-lg p-4 shadow-sm">
                     <h2 className="font-medium mb-4">Danh mục khóa học</h2>
                     <div className="space-y-2">
