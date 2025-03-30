@@ -16,7 +16,7 @@ export default function Home() {
           {/* Left Sidebar - Ẩn trên mobile, hiện trên desktop */}
           <div className="hidden md:block relative">
             <div className="sticky top-[75px] h-[calc(100vh-75px)]">
-              <div className="h-full pr-2">
+              <div className="h-full">
                 <div className="h-full overflow-y-auto custom-scrollbar">
                   <LeftSidebar />
                 </div>

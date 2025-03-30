@@ -53,6 +53,7 @@
   * {
     @apply border-gray-200;
   }
+
   body {
     @apply bg-white text-gray-900;
   }
@@ -60,35 +61,36 @@
 
 /* Custom scrollbar styles */
 .custom-scrollbar {
-  scrollbar-gutter: stable;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  overflow-y: auto;
+
+  /* Firefox: ẩn thumb mặc định */
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari and Opera */
+  width: 2px;
 }
 
-.custom-scrollbar:hover {
-  scrollbar-width: thin; /* Firefox */
-}
-
-.custom-scrollbar:hover::-webkit-scrollbar {
-  display: block;
-  width: 3px;
-}
-
-.custom-scrollbar:hover::-webkit-scrollbar-track {
+.custom-scrollbar::-webkit-scrollbar-track {
   background: transparent;
 }
 
-.custom-scrollbar:hover::-webkit-scrollbar-thumb {
-  background-color: rgba(156, 163, 175, 0.5);
+/* Thumb mặc định ẩn màu */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
   border-radius: 3px;
+  transition: background-color 0.3s;
 }
 
-.custom-scrollbar:hover::-webkit-scrollbar-thumb:hover {
+/* Khi hover: hiện màu cho thumb */
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
   background-color: rgba(156, 163, 175, 0.7);
+}
+
+/* Firefox: khi hover, thay đổi màu thumb */
+.custom-scrollbar:hover {
+  scrollbar-color: rgba(156, 163, 175, 0.7) transparent;
 }
 
 :root {
@@ -107,10 +109,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
