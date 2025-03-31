@@ -36,13 +36,13 @@ const SearchSection = () => {
 
   return (
     <div className="mb-4 p-3 bg-white rounded-lg">
-      <h2 className="text-xl font-medium text-gray-800 mb-4">Bạn đang tìm kiếm gì?</h2>
+      <h2 className="text-xl font-medium text-[#3d82af] mb-4">Bạn đang tìm kiếm gì?</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {searchItems.map((item, index) => (
           <Link
             key={index}
             href={item.href}
-            className={`${item.bgColor} hover:bg-[#4CAF50] hover:text-white bg-[#E8F5E9] p-3 rounded-lg text-center shadow-sm transition-colors duration-200 text-gray-700 text-sm`}
+            className={`${item.bgColor} hover:bg-[#3d82af] hover:text-white bg-[#bfdff5] p-3 rounded-lg text-center shadow-sm transition-colors duration-200 text-gray-700 text-sm`}
           >
             {item.text}
           </Link>

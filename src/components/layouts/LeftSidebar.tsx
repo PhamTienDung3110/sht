@@ -40,6 +40,15 @@ const LeftSidebar = () => {
     {
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2.5 2.5 0 00-2.5-2.5H15" />
+        </svg>
+      ),
+      text: 'Tin tức',
+      href: '/news'
+    },
+    {
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 9a2 2 0 10-4 0v5a2 2 0 01-2 2h6m-6-4h4m8 0a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
@@ -179,7 +188,7 @@ const LeftSidebar = () => {
       </div>
 
       {/* Form đăng ký tư vấn */}
-      <div className="bg-[#4CAF50] rounded-lg p-4">
+      <div className="bg-[#3d82af] rounded-lg p-4">
         <h3 className="text-white font-medium text-center mb-4">ĐĂNG KÝ TƯ VẤN</h3>
         <form onSubmit={handleSubmit} className="space-y-3">
           <input

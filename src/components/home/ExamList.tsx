@@ -103,7 +103,7 @@ const ExamList = () => {
                 {exam.avatar}
               </div>
               <div>
-                <h3 className="text-[#4CAF50] font-medium text-sm">
+                <h3 className="text-[#3d82af] font-medium text-sm">
                   {exam.studentName}
                 </h3>
                 <p className="text-gray-500 text-xs">
@@ -121,7 +121,7 @@ const ExamList = () => {
       </div>
 
       <div className="p-4 text-center border-b">
-        <button className="text-[#4CAF50] font-medium text-sm hover:text-[#2E7D32] transition-colors duration-200">
+        <button className="text-[#3d82af] font-medium text-sm hover:text-[#2E7D32] transition-colors duration-200">
           Kích hoạt thẻ
         </button>
       </div>
@@ -146,7 +146,7 @@ const ExamList = () => {
                 />
               </div>
               <div className="flex-1">
-                <h4 className="text-sm font-medium text-gray-800 group-hover:text-[#4CAF50] line-clamp-2 transition-colors duration-200">
+                <h4 className="text-sm font-medium text-gray-800 group-hover:text-[#3d82af] line-clamp-2 transition-colors duration-200">
                   {item.title}
                 </h4>
                 <p className="text-xs text-gray-500 mt-1">

@@ -56,13 +56,13 @@ const ExamTypeSection = () => {
   return (
     <div className="mb-6 p-3 bg-white rounded-lg">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-xl font-semibold text-green-700">
+        <h2 className="text-xl font-semibold text-[#3d82af]">
           Thi thử đánh giá năng lực- đánh giá tư duy
         </h2>
         <div className="flex gap-2">
           <button 
             onClick={prevSlide}
-            className="w-8 h-8 flex items-center justify-center rounded-full border border-green-600 text-green-600 hover:bg-green-600 hover:text-white transition-colors"
+            className="w-8 h-8 flex items-center justify-center rounded-full border border-[#3d82af] text-[#3d82af] hover:bg-[#3d82af] hover:text-white transition-colors"
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
@@ -70,7 +70,7 @@ const ExamTypeSection = () => {
           </button>
           <button 
             onClick={nextSlide}
-            className="w-8 h-8 flex items-center justify-center rounded-full border border-green-600 text-green-600 hover:bg-green-600 hover:text-white transition-colors"
+            className="w-8 h-8 flex items-center justify-center rounded-full border border-[#3d82af] text-[#3d82af] hover:bg-[#3d82af] hover:text-white transition-colors"
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
               <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -99,7 +99,7 @@ const ExamTypeSection = () => {
                   </div>
                 </div>
                 {examType.subtitle && (
-                  <h4 className="mt-3 text-center text-green-700 font-medium">
+                  <h4 className="mt-3 text-center text-[#3d82af] font-medium">
                     {examType.subtitle}
                   </h4>
                 )}

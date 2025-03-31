@@ -42,7 +42,7 @@ const teachers: Teacher[] = [
 const TeacherSection = () => {
   return (
     <div className="mb-4 p-3 bg-white rounded-lg">
-      <h2 className="text-xl font-medium text-gray-800 mb-4">Đội ngũ giáo viên chất lượng</h2>
+      <h2 className="text-xl font-medium text-[#3d82af] mb-4">Đội ngũ giáo viên chất lượng</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
         {teachers.map((teacher, index) => (
           <div key={index} className="relative group cursor-pointer rounded-lg">
