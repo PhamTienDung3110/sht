@@ -159,9 +159,9 @@ export default function NewsPage() {
                 <Link 
                   key={news.id} 
                   href={`/news/${news.title.toLowerCase().replace(/ /g, '-')}`}
-                  className="block"
+                  className="block h-full bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                  <div className="h-full flex flex-col">
                     <div className="relative pt-[75%]">
                       <Image
                         src={news.image}
@@ -170,15 +170,15 @@ export default function NewsPage() {
                         className="object-cover"
                       />
                     </div>
-                    <div className="p-4">
+                    <div className="p-4 flex flex-col flex-grow">
                       <div className="flex items-center space-x-4 mb-3">
                         <span className="text-xs text-[#3d82af]">{news.category}</span>
                         <span className="text-xs text-gray-600">{news.date}</span>
                       </div>
-                      <h3 className="font-medium text-base mb-2 line-clamp-2 group-hover:text-[#3d82af]">
+                      <h3 className="font-medium text-base mb-2 line-clamp-2 group-hover:text-[#3d82af] flex-grow">
                         {news.title}
                       </h3>
-                      <div className="flex items-center text-sm text-gray-600">
+                      <div className="flex items-center text-sm text-gray-600 mt-auto">
                         <span>{news.author}</span>
                       </div>
                     </div>

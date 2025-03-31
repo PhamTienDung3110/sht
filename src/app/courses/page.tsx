@@ -210,8 +210,8 @@ export default function CoursesPage() {
             {/* Course Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {filteredCourses.map((course) => (
-                <Link key={course.id} href={`/courses/${course.title.toLowerCase().replace(/ /g, '-')}`}>
-                  <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <Link className='bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow' key={course.id} href={`/courses/${course.title.toLowerCase().replace(/ /g, '-')}`}>
+                  <div className="">
                     <div className="relative pt-[75%] sm:pt-[100%]">
                       {course.discount && (
                         <div className="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 text-sm rounded z-10">
