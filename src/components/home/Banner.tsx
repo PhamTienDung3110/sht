@@ -5,22 +5,33 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import banner1 from '@/assets/img/banner-1.jpg';
+import banner2 from '@/assets/img/banner-2.jpg';
 
 const banners = [
   {
-    image: "https://hsavnu.edu.vn/_next/image?url=https%3A%2F%2Fhsa-education.sgp1.digitaloceanspaces.com%2Fc8945014-5317-4861-b6a9-910f256e0e56_Ver01.1.jpg&w=1920&q=75",
+    image: banner1,
   },
   {
-    image: "https://hsavnu.edu.vn/_next/image?url=https%3A%2F%2Fhsa-education.sgp1.digitaloceanspaces.com%2F45a039f3-e59f-4a07-a883-bc5b263a6af2_Ver01.2.jpg&w=1920&q=75",
+    image: banner2,
   },
   {
-    image: "https://hsavnu.edu.vn/_next/image?url=https%3A%2F%2Fhsa-education.sgp1.digitaloceanspaces.com%2Fcd7a35dd-fb4f-4a55-8f2f-b4da804ddd8b_Ver01.3.jpg&w=1920&q=75",
+    image: banner1,
+  },
+  {
+    image: banner2,
+  },
+  {
+    image: banner1,
+  },
+  {
+    image: banner2,
   }
 ];
 
 const Banner = () => {
   return (
-    <div className="relative w-full h-[280px] mb-4">
+    <div className="relative w-full h-[340px] mb-4">
       <Swiper
         modules={[Autoplay, Pagination]}
         spaceBetween={0}

@@ -7,8 +7,8 @@ import Footer from '@/components/layouts/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'SHT Education',
-  description: 'SHT Education',
+  title: 'SHT Education - Công nghệ và Giáo dục SHT',
+  description: 'Công ty Cổ phần Công nghệ và Giáo dục SHT - Nền tảng giáo dục trực tuyến hàng đầu dành cho học sinh Việt Nam',
 }
 
 export default function RootLayout({
