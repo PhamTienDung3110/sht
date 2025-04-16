@@ -40,21 +40,21 @@ const teachers: Teacher[] = [
     image: coMinhAnh,
     title: 'Giảng viên'
   },
-  {
-    name: 'Cô My (sinh)',
-    image: coMysinh,
-    title: 'Giảng viên'
-  },
-  {
-    name: 'Cô Thanh Hương',
-    image: coThanhHuong,
-    title: 'Giảng viên'
-  },
-  {
-    name: 'Cô Quyên (Sinh)',
-    image: coQuyenSinh,
-    title: 'Giảng viên'
-  }
+  // {
+  //   name: 'Cô My (sinh)',
+  //   image: coMysinh,
+  //   title: 'Giảng viên'
+  // },
+  // {
+  //   name: 'Cô Thanh Hương',
+  //   image: coThanhHuong,
+  //   title: 'Giảng viên'
+  // },
+  // {
+  //   name: 'Cô Quyên (Sinh)',
+  //   image: coQuyenSinh,
+  //   title: 'Giảng viên'
+  // }
 ];
 
 const TeacherSection = () => {
