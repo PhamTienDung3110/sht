@@ -30,15 +30,15 @@ export default function Home() {
               <Banner />
               <SearchSection />
               <TeacherSection />
-              <ExamTypeSection />
-              <StudentHonorSection />
-              <StudentFeedbackSection />
-              <BookSection />
+              {/* <ExamTypeSection /> */}
+              {/* <StudentHonorSection /> */}
+              {/* <StudentFeedbackSection /> */}
+              {/* <BookSection /> */}
             </div>
           </main>
 
           {/* Right Sidebar - Ẩn trên mobile, hiện trên desktop */}
-          <div className="hidden md:block relative">
+          {/* <div className="hidden md:block relative">
             <div className="sticky top-[75px] h-[calc(100vh-75px)]">
               <div className="h-full pr-2">
                 <div className="h-full overflow-y-auto custom-scrollbar">
@@ -51,7 +51,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
