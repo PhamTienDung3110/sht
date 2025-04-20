@@ -4,7 +4,7 @@ import coPhanThiThuHa from '@/assets/img/co-phan-thi-thu-ha.jpg';
 import coNgoc from '@/assets/img/co-ngoc.jpg';
 import coPhuongSu from '@/assets/img/co-phuong-su.jpg';
 import coMinhAnh from '@/assets/img/co-minh-anh.jpg';
-import coMysinh from '@/assets/img/co-my-sinh.jpg';
+import coMysinh from '@/assets/img/co-my-sinh.png';
 import coThanhHuong from '@/assets/img/co-thanh-huong.jpg';
 import coQuyenSinh from '@/assets/img/co-quyen-sinh.jpg';
 
