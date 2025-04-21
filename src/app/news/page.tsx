@@ -91,7 +91,7 @@ export default function NewsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50  mt-[50px]">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 min-h-[calc(100vh-75px)] pt-[30px]">
           {/* Left Sidebar - News Categories */}

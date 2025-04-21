@@ -29,7 +29,7 @@ export default function NewsDetailPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50  mt-[50px]">
       <div className="container mx-auto px-4">
         {/* Breadcrumb - Ẩn trên mobile */}
         <div className="hidden sm:flex items-center space-x-2 text-sm text-gray-600 mt-4">
