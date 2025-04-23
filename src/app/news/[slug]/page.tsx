@@ -19,13 +19,13 @@ export default function NewsDetailPage() {
       date: '28/02/2024',
       category: 'Hướng dẫn'
     },
-    {
-      id: 3,
-      title: 'Tổng hợp đề thi V-ACT các năm từ 2021-2023',
-      image: 'https://hsavnu.edu.vn/_next/image?url=https%3A%2F%2Fhsa-education.sgp1.digitaloceanspaces.com%2F3ebaa1ad-9842-4ed5-bd0c-d8fba82d3d4c_T%25E1%25BA%25B7ng%2520s%25C3%25A1ch.png&w=828&q=75',
-      date: '25/02/2024',
-      category: 'Tài liệu'
-    }
+    // {
+    //   id: 3,
+    //   title: 'Tổng hợp đề thi V-ACT các năm từ 2021-2023',
+    //   image: 'https://hsavnu.edu.vn/_next/image?url=https%3A%2F%2Fhsa-education.sgp1.digitaloceanspaces.com%2F3ebaa1ad-9842-4ed5-bd0c-d8fba82d3d4c_T%25E1%25BA%25B7ng%2520s%25C3%25A1ch.png&w=828&q=75',
+    //   date: '25/02/2024',
+    //   category: 'Tài liệu'
+    // }
   ];
 
   return (
