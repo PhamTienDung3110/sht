@@ -52,7 +52,7 @@ export default function ExamInfoPage({ params }: { params: { id: string } }) {
 
   return (
     <div className="bg-gray-50 container mx-auto mt-[100px]">
-      <Box sx={{ maxWidth: 600, mx: 'auto' }}>
+      <Box sx={{ maxWidth: 600, mx: 'auto', padding: '0 10px 0 10px' }}>
         <Typography 
           variant="h4" 
           component="h1" 

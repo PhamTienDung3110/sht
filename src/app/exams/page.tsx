@@ -1,35 +1,19 @@
+'use client'
+import { EXAM_CONST } from '@/constant/exam';
 import Link from 'next/link';
-
-const exams = [
-  {
-    id: 1,
-    title: 'Đề thi thử THPT Quốc Gia 2024 - Môn Toán',
-    duration: 90,
-    totalQuestions: 50,
-    subject: 'Toán',
-  },
-  {
-    id: 2,
-    title: 'Đề thi thử THPT Quốc Gia 2024 - Môn Vật Lý',
-    duration: 50,
-    totalQuestions: 40,
-    subject: 'Vật Lý',
-  },
-  {
-    id: 3,
-    title: 'Đề thi thử THPT Quốc Gia 2024 - Môn Hóa Học',
-    duration: 50,
-    totalQuestions: 40,
-    subject: 'Hóa Học',
-  },
-];
+import { useEffect } from 'react';
 
 export default function ExamsPage() {
+  useEffect(() => {
+    localStorage.removeItem('examResult');
+    localStorage.removeItem('examInfo');
+    localStorage.removeItem('examState');
+  }, []);
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-2xl font-bold text-[#3d82af] mb-6">Danh sách đề thi</h1>
       <div className="grid gap-6">
-        {exams.map((exam) => (
+        {EXAM_CONST.map((exam) => (
           <div key={exam.id} className="bg-white rounded-lg shadow-md p-6">
             <h2 className="text-xl font-semibold mb-2">{exam.title}</h2>
             <div className="grid grid-cols-3 gap-4 text-sm text-gray-600 mb-4">
