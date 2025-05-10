@@ -3075,9 +3075,9 @@ export default function ExamTestPage({ params }: { params: { id: string } }) {
   const currentQuestionData = mockQuestions[currentQuestion];
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 mt-1 md:mt-[50px]">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
-        <h1 className="text-2xl font-bold text-[#3d82af]">Bài thi thử</h1>
+        <h1 className="text-2xl font-bold text-[#3d82af]">Bài thi {examMainInfo?.subject}</h1>
         <div className="text-xl font-bold text-red-600">
           {formatTime(timeLeft)}
         </div>
@@ -3097,7 +3097,7 @@ export default function ExamTestPage({ params }: { params: { id: string } }) {
                     ? 'bg-[#3d82af] text-white'
                     : answers[question.id]
                       ? 'bg-green-100 text-green-800'
-                      : 'bg-gray-100 hover:bg-gray-200'
+                      : 'bg-gray-100 hover:bg-gray-200  text-black'
                     }`}
                 >
                   <span className="relative z-10">{index + 1}</span>
@@ -3124,8 +3124,8 @@ export default function ExamTestPage({ params }: { params: { id: string } }) {
                     <label
                       key={key}
                       className={`block p-3 border rounded-md cursor-pointer hover:bg-gray-50 ${answers[currentQuestionData?.id] === key
-                        ? 'border-[#3d82af] bg-blue-50'
-                        : 'border-gray-300'
+                        ? 'border-[#3d82af] bg-blue-50  text-black'
+                        : 'border-gray-300  text-black'
                         }`}
                     >
                       <input
@@ -3134,7 +3134,7 @@ export default function ExamTestPage({ params }: { params: { id: string } }) {
                         value={key}
                         checked={answers[currentQuestionData?.id] === key}
                         onChange={() => handleAnswerSelect(currentQuestionData?.id, key)}
-                        className="mr-2"
+                        className="mr-2 text-black"
                       />
                       {
                         typeof value === 'string' ? processLatexContent(value) : value
@@ -3149,7 +3149,7 @@ export default function ExamTestPage({ params }: { params: { id: string } }) {
                     value={answers[currentQuestionData?.id] || ''}
                     onChange={(e) => handleAnswerSelect(currentQuestionData?.id, e.target.value)}
                     placeholder="Nhập kết quả của bạn"
-                    className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#3d82af] focus:border-transparent"
+                    className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#3d82af] focus:border-transparent  text-black"
                   />
                 </div>
               )}
